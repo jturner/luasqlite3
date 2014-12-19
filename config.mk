@@ -10,10 +10,13 @@ LUALIB ?= -L/usr/local/lib
 
 # flags
 CFLAGS += -fPIC -Wall -Os ${LUAINC}
-LDFLAGS += -shared ${LUALIB} -lsqlite3
+LDFLAGS += ${LUALIB} -lsqlite3
+
+# BSD
+LDFLAGS += -shared
 
 # Mac OS X
-#LDFLAGS += -llua
+#LDFLAGS += -bundle -undefined dynamic_lookup
 
 # compiler and linker
 CC ?= cc
