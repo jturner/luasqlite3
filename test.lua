@@ -46,7 +46,7 @@ line("select * from t", 'db:exec')
 
 assert(db:exec('select * from t', function (ud, ncols, values, names)
     --table.setn(values, 2)
-    print(unpack(values))
+    print(table.unpack(values))
     return sqlite3.OK
 end) == sqlite3.OK)
 
