@@ -3,6 +3,8 @@ luasqlite3
 
 A lua binding to [SQLite3](http://sqlite.org/).
 
+Project moved to sourcehut: https://git.sr.ht/~jturner/luasqlite3
+
 Repackage
 ---------
 
